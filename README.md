@@ -84,7 +84,7 @@ Clone the GitHub repository to your local machine using the following command:
 
 ```bash
 git clone <https://github.com/saras1122/Rule_engine_ast.git>
-cd <repository-name>
+cd <ruleEngine_ast>
 ```
 ### Backend Setup
 
