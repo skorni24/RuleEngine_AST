@@ -83,8 +83,8 @@ To set up and run the application, you will need the following dependencies:
 Clone the GitHub repository to your local machine using the following command:
 
 ```bash
-git clone <https://github.com/saras1122/Rule_engine_ast.git>
-cd <ruleEngine_ast>
+git clone <https://github.com/skorni24/RuleEngine_AST.git>
+cd <RuleEngine_AST>
 ```
 ### Backend Setup
 
