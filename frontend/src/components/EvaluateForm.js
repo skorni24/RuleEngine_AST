@@ -12,16 +12,13 @@ const EvaluateForm = () => {
       const jsonData = JSON.parse(data);
 
       // Send the POST request to the backend
-      const response = await fetch(
-        "htn tp://localhost:8000/api/rules/evaluate",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ ruleId: ruleId, data: jsonData }),
-        }
-      );
+      const response = await fetch("http://localhost:8000/api/rules/evaluate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ruleId: ruleId, data: jsonData }),
+      });
 
       // Get the JSON response from the server
       const result = await response.json();
