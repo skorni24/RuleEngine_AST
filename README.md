@@ -100,11 +100,11 @@ cd RuleEngine_AST
 
 2. **Install Dependencies**
    ```bash
-   npm init
+   npm i
    ```
 3. **Start the Backend Server**
    ```bash
-   nodemon index.js
+   node index.js
    ```
 
 ### Frontend Setup
@@ -117,11 +117,11 @@ cd RuleEngine_AST
 
 2. **Install Dependencies**
    ```bash
-   npm install
+   npm i
    ```
 3. **Start the Backend Server**
    ```bash
-   npm run
+   npm start
    ```
 
 # Access the Application
