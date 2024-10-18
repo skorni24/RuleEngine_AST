@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const db_password = process.env.DB_PASSWORD;
 
-const mongoURI = `mongodb+srv://korninani:${db_password}@cluster0.p7nwv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+const mongoURI = `mongodb+srv://21bd1a05aqcsef:${db_password}@rulengine.ghk0l.mongodb.net/?retryWrites=true&w=majority&appName=rulengine`;
 
 async function connectDB() {
   try {

@@ -1,38 +1,78 @@
+body {
+  transition: background-color 0.3s, color 0.3s;
+  color: black; /* Default text color for day mode */
+}
+
+.dash{
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+.night-mode {
+  background-color: black;
+  color: white; /* Default text color for night mode */
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.floating-button {
+  position: fixed;
+  top: 25px; /* Position at the top of the page */
+  right: 15px; /* Position at the right of the page */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make the button circular */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.floating-button:hover {
+  background-color: #0056b3;
+}
+
+/* Define styles for the heading in day and night modes */
+.heading-day {
+  color: black;
+}
+
+.heading-night {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Additional styles for night mode */
+.night-mode .text-black {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.night-mode .bg-white {
+  background-color: #2d3748; /* Darker background for night mode */
+}
+
+.night-mode .text-gray-700 {
+  color: #cbd5e0; /* Lighter text color for night mode */
+}
+
+.night-mode .border-gray-300 {
+  border-color: #4a5568; /* Darker border color for night mode */
+}
+
+.night-mode .bg-indigo-600 {
+  background-color: #4c51bf; /* Darker background for buttons in night mode */
+}
+
+.night-mode .hover\:bg-indigo-700:hover {
+  background-color: #434190; /* Darker hover background for buttons in night mode */
 }
